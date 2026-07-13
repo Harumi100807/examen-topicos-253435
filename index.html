@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tenis - Inicio</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/img/8.png" alt="Logo de Tienda"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="Pages/catalogo.html">Catálogo</a></li>
+                <li><a href="Pages/carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="carousel-container">
+                <button class="carousel-btn btn-prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide" style="background-image: url('/img/png1.jpg');">
+                        <div class="carousel-content">
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('/img/png2.jpg');">
+                        <div class="carousel-content">
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('/img/png3.jpg');">
+                        <div class="carousel-content">
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('/img/png4.jpg');">
+                        <div class="carousel-content">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn btn-next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Modelos Más Vendidos</h2>
+            <div class="grid-container">
+                <div class="card"><div class="card-img"><img src="/img/png1.jpg" alt="Tenis 1"></div><div class="card-info"><h3>Sport Red</h3><p class="price">$1,899.00</p></div></div>
+                <div class="card"><div class="card-img"><img src="/img/png2.jpg" alt="Tenis 2"></div><div class="card-info"><h3>Runner Black</h3><p class="price">$2,100.00</p></div></div>
+                <div class="card"><div class="card-img"><img src="/img/png4.jpg" alt="Tenis 3"></div><div class="card-info"><h3>Street Style</h3><p class="price">$1,500.00</p></div></div>
+                <div class="card"><div class="card-img"><img src="/img/png4.jpg" alt="Tenis 4"></div><div class="card-info"><h3>Classic Urban</h3><p class="price">$1,750.00</p></div></div>
+                <div class="card"><div class="card-img"><img src="/img/png5.jpg" alt="Tenis 5"></div><div class="card-info"><h3>Dama Pink Pro</h3><p class="price">$1,999.00</p></div></div>
+                <div class="card"><div class="card-img"><img src="/img/png6.jpg" alt="Tenis 6"></div><div class="card-info"><h3>Kid Comfort</h3><p class="price">$1,200.00</p></div></div>
+                <div class="card"><div class="card-img"><img src="/img/png7.jpg" alt="Tenis 7"></div><div class="card-info"><h3>Sport Red V2</h3><p class="price">$1,950.00</p></div></div>
+                <div class="card"><div class="card-img"><img src="/img/png2.jpg" alt="Tenis 8"></div><div class="card-info"><h3>Runner Pro Max</h3><p class="price">$2,300.00</p></div></div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Ofertas Imperdibles</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-tag">-30%</div>
+                    <div class="card-img"><img src="/img/png5.jpg" alt="Oferta 1"></div>
+                    <div class="card-info">
+                        <h3>Urban Neo</h3>
+                        <p class="price"><span class="old-price">$2,000.00</span>$1,400.00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tag">-50%</div>
+                    <div class="card-img"><img src="/img/png4.jpg" alt="Oferta 2"></div>
+                    <div class="card-info">
+                        <h3>Classic Retro</h3>
+                        <p class="price"><span class="old-price">$3,000.00</span>$1,500.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Nuestras Sucursales</h2>
+            <div class="sucursales-container">
+                <div class="sucursal-card">
+                    <img src="/img/png1.jpg" alt="Sucursal Centro" class="img-sucursal">
+                    <h3>Sucursal Centro</h3>
+                    <p> Dirección: Av. Principal 123</p>
+                    <p> Tel: 555-0101</p>
+                    <p> Horario: L-V 9:00 - 20:00</p>
+                </div>
+                <div class="sucursal-card">
+                    <img src="/img/png2.jpg" alt="Sucursal Norte" class="img-sucursal">
+                    <h3>Sucursal Norte</h3>
+                    <p> Dirección: Plaza Comercial Local 5</p>
+                    <p> Tel: 555-0202</p>
+                    <p> Horario: L-D 10:00 - 21:00</p>
+                </div>
+                <div class="sucursal-card">
+                    <img src="/img/png5.jpg" alt="Sucursal Sur" class="img-sucursal">
+                    <h3>Sucursal Sur</h3>
+                    <p> Dirección: Blvd. Sur 456</p>
+                    <p> Tel: 555-0303</p>
+                    <p> Horario: L-S 9:00 - 18:00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.nike.com" target="_blank"> Nike</a>
+            <a href="https://www.adidas.com" target="_blank"> Adidas</a>
+            <a href="https://www.puma.com" target="_blank"> Puma</a>
+        </div>
+        <p>Examen Unidad 3. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>

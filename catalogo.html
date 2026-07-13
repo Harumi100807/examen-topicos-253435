@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tenis - Menú/Catálogo</title>
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="../img/8.png" alt="Logo de Tienda"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="catalogo.html" class="active">Catalogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Nuestro catalogo</h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterCatalog('todos', event)">Todos</button>
+            <button class="filter-btn" onclick="filterCatalog('caballero', event)">Caballeros</button>
+            <button class="filter-btn" onclick="filterCatalog('dama', event)">Damas</button>
+            <button class="filter-btn" onclick="filterCatalog('nino', event)">Niños</button>
+            <button class="filter-btn" onclick="filterCatalog('nina', event)">Niñas</button>
+        </div>
+
+        <div class="grid-container" id="catalogGrid">
+            
+            <div class="card product-item caballero"><div class="card-img"><img src="/img/png5.jpg" alt="Tenis"></div><div class="card-info"><h3>Caballero 1</h3><p>Caballeros</p><p class="price">$1,800</p></div></div>
+            <div class="card product-item caballero"><div class="card-img"><img src="../img/2.jpg" alt="Tenis"></div><div class="card-info"><h3>Caballero 2</h3><p>Caballeros</p><p class="price">$1,900</p></div></div>
+            <div class="card product-item caballero"><div class="card-img"><img src="../img/3.jpg" alt="Tenis"></div><div class="card-info"><h3>Caballero 3</h3><p>Caballeros</p><p class="price">$2,000</p></div></div>
+            <div class="card product-item caballero"><div class="card-img"><img src="../img/4.jpg" alt="Tenis"></div><div class="card-info"><h3>Caballero 4</h3><p>Caballeros</p><p class="price">$2,100</p></div></div>
+            <div class="card product-item caballero"><div class="card-img"><img src="../img/5.jpg" alt="Tenis"></div><div class="card-info"><h3>Caballero 5</h3><p>Caballeros</p><p class="price">$2,200</p></div></div>
+            <div class="card product-item caballero"><div class="card-img"><img src="../img/6.jpg" alt="Tenis"></div><div class="card-info"><h3>Caballero 6</h3><p>Caballeros</p><p class="price">$2,300</p></div></div>
+
+            <div class="card product-item dama"><div class="card-img"><img src="../img/da1.jpg" alt="Tenis"></div><div class="card-info"><h3>Dama 1</h3><p>Damas</p><p class="price">$1,500</p></div></div>
+            <div class="card product-item dama"><div class="card-img"><img src="../img/da2..jpg" alt="Tenis"></div><div class="card-info"><h3>Dama 2</h3><p>Damas</p><p class="price">$1,600</p></div></div>
+            <div class="card product-item dama"><div class="card-img"><img src="../img/da3.jpg" alt="Tenis"></div><div class="card-info"><h3>Dama 3</h3><p>Damas</p><p class="price">$1,700</p></div></div>
+            <div class="card product-item dama"><div class="card-img"><img src="../img/da4.jpg" alt="Tenis"></div><div class="card-info"><h3>Dama 4</h3><p>Damas</p><p class="price">$1,800</p></div></div>
+            <div class="card product-item dama"><div class="card-img"><img src="../img/da1.jpg" alt="Tenis"></div><div class="card-info"><h3>Dama 5</h3><p>Damas</p><p class="price">$1,900</p></div></div>
+            <div class="card product-item dama"><div class="card-img"><img src="../img/da3.jpg" alt="Tenis"></div><div class="card-info"><h3>Dama 6</h3><p>Damas</p><p class="price">$2,000</p></div></div>
+
+            <div class="card product-item nino"><div class="card-img"><img src="../img/q1.jpg" alt="Tenis"></div><div class="card-info"><h3>Niño 1</h3><p>Niños</p><p class="price">$900</p></div></div>
+            <div class="card product-item nino"><div class="card-img"><img src="../img/q2.jpg" alt="Tenis"></div><div class="card-info"><h3>Niño 2</h3><p>Niños</p><p class="price">$950</p></div></div>
+            <div class="card product-item nino"><div class="card-img"><img src="../img/q3.jpg" alt="Tenis"></div><div class="card-info"><h3>Niño 3</h3><p>Niños</p><p class="price">$1,000</p></div></div>
+            <div class="card product-item nino"><div class="card-img"><img src="../img/q4.jpg" alt="Tenis"></div><div class="card-info"><h3>Niño 4</h3><p>Niños</p><p class="price">$1,050</p></div></div>
+            <div class="card product-item nino"><div class="card-img"><img src="../img/q5.jpg" alt="Tenis"></div><div class="card-info"><h3>Niño 5</h3><p>Niños</p><p class="price">$1,100</p></div></div>
+            <div class="card product-item nino"><div class="card-img"><img src="../img/q1.jpg" alt="Tenis"></div><div class="card-info"><h3>Niño 6</h3><p>Niños</p><p class="price">$1,150</p></div></div>
+
+            <div class="card product-item nina"><div class="card-img"><img src="../img/a1.jpg" alt="Tenis"></div><div class="card-info"><h3>Niña 1</h3><p>Niñas</p><p class="price">$900</p></div></div>
+            <div class="card product-item nina"><div class="card-img"><img src="../img/a2.jpg" alt="Tenis"></div><div class="card-info"><h3>Niña 2</h3><p>Niñas</p><p class="price">$950</p></div></div>
+            <div class="card product-item nina"><div class="card-img"><img src="../img/a3.webp" alt="Tenis"></div><div class="card-info"><h3>Niña 3</h3><p>Niñas</p><p class="price">$1,000</p></div></div>
+            <div class="card product-item nina"><div class="card-img"><img src="../img/a4.jpg" alt="Tenis"></div><div class="card-info"><h3>Niña 4</h3><p>Niñas</p><p class="price">$1,050</p></div></div>
+            <div class="card product-item nina"><div class="card-img"><img src="../img/a5.jpg" alt="Tenis"></div><div class="card-info"><h3>Niña 5</h3><p>Niñas</p><p class="price">$1,100</p></div></div>
+            <div class="card product-item nina"><div class="card-img"><img src="../img/a1.jpg" alt="Tenis"></div><div class="card-info"><h3>Niña 6</h3><p>Niñas</p><p class="price">$1,150</p></div></div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank"> Facebook Universidad</a>
+            <a href="#" target="_blank"> Twitter Universidad</a>
+        </div>
+        <p>Examen Unidad 3. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="../JS/main.js"></script>
+</body>
+</html>
